@@ -1,0 +1,27 @@
+<table class="table table-bordered table-striped">
+	<caption>高端用户</caption>
+	<thead>
+		<tr>
+			<th>编号</th>
+			<th>工厂</th>
+			<th>类别</th>
+			<th>品种</th>
+			<th>牌号</th>
+			<th>规格</th>
+			<th>状态</th>
+			<th>重量(KG)</th>
+		</tr>
+	</thead>
+	<tbody ng-controller="gaoduanController">
+		<tr ng-repeat="li in list">
+			<td>{{li.id}}</td>
+			<td>{{li.gongchang}}</td>
+			<td>{{li.leibie}}</td>
+			<td>{{li.pinzhong}}</td>
+			<td>{{li.paihao}}</td>
+			<td>{{li.guige}}</td>
+			<td>{{li.zhuangt}}</td>
+			<td>{{li.KG | KG}}</td>
+		</tr>
+	</tbody>
+</table>
